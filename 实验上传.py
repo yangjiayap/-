@@ -548,7 +548,7 @@ else:
 
             # ✅ 生成逻辑：和基础界面一模一样
             if render_btn and adv_p.strip():
-                with st.spinner("专家模式渲染中..."):
+                with st.spinner("正在生成中..."):
                     img, dur = generate_image({
                         "prompt": adv_p,
                         "steps": steps,
@@ -590,5 +590,6 @@ else:
                     "<div style='height:300px;display:flex;align-items:center;justify-content:center;color:#aaa;'>图片预览将在此显示</div>",
                     unsafe_allow_html=True
                 )
+
 
 
