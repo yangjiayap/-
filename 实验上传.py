@@ -466,13 +466,13 @@ if ui_mode == "对话界面":
 elif ui_mode == "基础图形界面":
     col_l, col_r = st.columns([1, 1], gap="large")
     with col_l:
-        st.subheader("📝 指令")
+        st.subheader("指令")
         with st.container(border=True):
             p = st.text_area("提示词", height=150)
             btn = st.button("开始生成", use_container_width=True, type="primary")
 
     with col_r:
-        st.subheader("🖼️ 生成区")
+        st.subheader("生成区")
 
         with st.container(border=True):
             if btn and p:
@@ -515,7 +515,7 @@ else:
 
     # ================= 左侧：专家参数 =================
     with col_l:
-        st.subheader("⚙️ 专家配置")
+        st.subheader("指令")
 
         with st.container(border=True):
             adv_p = st.text_area("Prompt", height=120)
@@ -542,7 +542,7 @@ else:
 
     # ================= 右侧：生成区（完全照基础界面） =================
     with col_r:
-        st.subheader("🖼️ 生成区")
+        st.subheader("生成区")
 
         with st.container(border=True):
 
@@ -590,4 +590,5 @@ else:
                     "<div style='height:300px;display:flex;align-items:center;justify-content:center;color:#aaa;'>图片预览将在此显示</div>",
                     unsafe_allow_html=True
                 )
+
 
